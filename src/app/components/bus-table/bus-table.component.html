@@ -1,0 +1,29 @@
+<br>
+<h1>busses list to bus stop num <span>{{numBusStopchild}}</span></h1>
+<table *ngIf="kavimExist" align="center" (click)="clickOnMy()">
+  <tr>
+    <th>קו אוטובוס</th>
+    <th>תחנת מוצא</th>
+    <th>תחנת יעד</th>
+    <th>האם האוטובוס הגיע בזמן</th>
+    <th>רשימת נוסעים</th>
+    <th>מחיר</th>
+  </tr>
+  <tr *ngFor="let b of bussesArray">
+    <td>{{b.num}}</td>
+    <td>{{b.originStation}}</td>
+    <td>{{b.terminatingStation}}</td>
+    <td>{{b.isTheLineOutOnTime}}</td>
+   <td>
+       <ul *ngFor="let p of b.arrayPassengers" >
+        <li>{{p.name}}</li>
+      </ul>
+    </td>
+    <td>{{b.price}}</td>
+  </tr>
+</table><br>
+<div style="text-align: center;">
+<button (click)="addBus()">add bus</button><br>
+</div>
+<app-form *ngIf="openForm"></app-form>
+<!-- <ng-content></ng-content> -->

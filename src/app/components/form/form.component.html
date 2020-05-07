@@ -1,0 +1,38 @@
+<br><br><br>
+
+<div style="text-align: center; font-size: 35px;">
+  <h1>New bus</h1>
+  <form #busForm="ngForm" (ngSubmit)="addBus(busForm)">
+    <div>
+      <label for="num">Num: </label>
+      <input type="number" name="num" required  
+      [(ngModel)]="bus.num" #num="ngModel">
+    </div><br>
+    <div>
+      <label for="originStation">Origin Station: </label>
+      <input type="text" name="originStation" pattern="[^ @]*@[^ @]*" required
+      [(ngModel)]="bus.originStation" #originStation="ngModel">
+    </div>
+    <br>
+    <div>
+      <label for="terminatingStation">Terminating Station: </label>
+      <input type="text" name="terminatingStation" required
+      [(ngModel)]="bus.terminatingStation" #terminatingStation="ngModel">
+    </div><br>
+    <div>
+        <label for="isTheLineOutOnTime">Is The Line Out On Time: </label>
+        <input type="checkbox" name="isTheLineOutOnTime" 
+        [(ngModel)]="bus.isTheLineOutOnTime" #isTheLineOutOnTime="ngModel">
+    </div><br>
+    <div>
+        <label for="price">Price: </label>
+        <input type="number" name="price" 
+        [(ngModel)]="bus.price" #price="ngModel">
+    </div>
+    <br>
+    <button type="submit">Submit</button>
+  </form>
+</div>
+
+
+

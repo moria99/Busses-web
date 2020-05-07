@@ -1,0 +1,14 @@
+h1{
+    text-align: center;
+    color: blue;
+}
+p{
+    text-align: center;
+    font-size: 20px;
+    color: blue;
+}
+
+.special{
+    color: darkmagenta;
+    font-size: 24px;
+}

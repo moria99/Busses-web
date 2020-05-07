@@ -1,0 +1,19 @@
+table{
+    text-align: center;
+    font-size: 20px;
+    width: 50%;
+    height: 30%;
+    border: 2px solid rebeccapurple;
+}
+
+button{
+    width: 20%;
+    font-size: 15px;
+    background-color: rebeccapurple;
+    color: white;
+    height: 30px;
+    text-align: center;
+}
+h1{
+    text-align: center;
+}

@@ -1,0 +1,5 @@
+{
+    "workbench.editor.highlightModifiedTabs": true,
+    "npm.fetchOnlinePackageInfo": false,
+    "terminal.integrated.experimentalRefreshOnResume": true
+}

@@ -1,0 +1,7 @@
+
+<br><br>
+<img [src]="urlImg">
+<div style="text-align: center;"><input type="text" *ngIf="numBusStopParent" [(ngModel)]="numBusStopParent"></div>
+<h1 *ngIf="messege">{{messege}}</h1>
+<app-bus-table [numBusStopchild]="numBusStopParent" (clickOnTable)="clickMy($event)">
+  <h2>this is display under the table</h2></app-bus-table>
